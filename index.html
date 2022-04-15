@@ -14,13 +14,13 @@
 <body>
     <div class="container">
         <header>
-            <input type="text" >
+            <input type="text" id="search-term">
             <button id="search"><i class="fas fa-search"></i></button>
         </header>
         <div class="fav-container">
             <h3>Favoirte Meals</h3>
-            <ul class="fav-meals">
-                <li>
+            <ul class="fav-meals" id="favContainer">
+                <!-- <li>
                     <img src="https:\/\/www.themealdb.com\/images\/media\/meals\/1525876468.jpg" alt="">
                     <span>Lorem.</span>
                 </li>
@@ -31,11 +31,11 @@
                 <li>
                     <img src="https:\/\/www.themealdb.com\/images\/media\/meals\/k420tj1585565244.jpg" alt="">
                     <span>Lorem, ipsum dolor.</span>
-                </li>
+                </li> -->
             </ul>
         </div>
         <div class="meals" id="meals">
-            <div class="meal">
+            <div class="meal" id="mealEl">
                 <!-- <div class="meal-header">
                     <span class="random">Random recipe</span>
                     <img src="https:\/\/www.themealdb.com\/images\/media\/meals\/uuyrrx1487327597.jpg" alt="">
@@ -48,6 +48,17 @@
                 </div> -->
             </div>
         </div>
+
+
+        <div class="popup-container hidden" id="meal-popup">
+            <div class="popup">
+                <button id="close-popup" class="close-popup">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="meal-info" id="meal-info"></div>
+            </div>
+        </div>
+
     </div>
     
 
